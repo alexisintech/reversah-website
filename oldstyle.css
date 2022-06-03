@@ -1,56 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/******************************************************************************************************* 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-*******************************************************************************************************/
-
 
 /*============================================================================
   Debut | Built with Shopify Slate
@@ -1486,9 +1433,9 @@ ol {
 
 /*================ #Links and Buttons ================*/
 /* a:not([disabled]):hover, a:focus {
-  color: var(--color-text-focus); } */
+  color: var(--color-text-focus); }
 
-/* .password-powered-by a:not([disabled]):hover, .password-powered-by a:focus {
+.password-powered-by a:not([disabled]):hover, .password-powered-by a:focus {
   color: var(--color-text-focus);
   border-bottom: 1px solid var(--color-text-focus); }
 
@@ -2079,8 +2026,8 @@ textarea {
 
 /*================ Site Nav Links ================*/
 .site-nav__link.site-nav--active-dropdown {
-  border: 1px solid var(--color-border);
-  border-bottom: 1px solid transparent;
+/*   border: 1px solid var(--color-border); */
+/*   border-bottom: 1px solid transparent; */
   z-index: 2; }
 
 .site-nav__link:focus .site-nav__label, .site-nav__link:not([disabled]):hover .site-nav__label {
@@ -8372,6 +8319,9 @@ a:hover{
 *******************************************************************************************************/
 
 
+
+
+/* Header */
 .site-header {
 	background-color: #303030;
 }
@@ -8421,34 +8371,31 @@ a:hover{
   border-radius: 10px;
 }
 
+/* FOOTER */
+#shopify-section-footer > footer > div:nth-child(1) > div > div > div > ul > li {
+  background-position: center;
+  background-size:30px;
+  background-repeat:no-repeat;
+}
+
 #shopify-section-footer > footer > div:nth-child(1) > div > div > div > ul > li:nth-child(1) {
   background-image: url(https://cdn.shopify.com/s/files/1/0550/1871/7362/files/4362958_tiktok_logo_social_media_icon_32c4e705-e900-46ec-9cb7-c3cce7a89857.png?v=1653688967);
-  background-size: 30px;
-  background-repeat: no-repeat;
 }
 
 #shopify-section-footer > footer > div:nth-child(1) > div > div > div > ul > li:nth-child(2) {
   background-image: url(https://cdn.shopify.com/s/files/1/0550/1871/7362/files/6929237_instagram_icon_4532fa2c-4da9-48da-acde-533ae67ee6d9.png?v=1653688967);
-  background-size: 30px;
-  background-repeat: no-repeat;
 }
 
 #shopify-section-footer > footer > div:nth-child(1) > div > div > div > ul > li:nth-child(3) {
   background-image: url(https://cdn.shopify.com/s/files/1/0550/1871/7362/files/8197841_discord_social_network_communication_interaction_message_icon_c51afae3-dcb7-4382-863b-e1d613b35cb8.png?v=1653688967);
-  background-size: 30px;
-  background-repeat: no-repeat;
 }
 
 #shopify-section-footer > footer > div:nth-child(1) > div > div > div > ul > li:nth-child(4) {
   background-image: url(https://cdn.shopify.com/s/files/1/0550/1871/7362/files/8197888_twitch_social_network_network_communication_interaction_icon_949fb912-4a06-4029-896f-17adde4b7d81.png?v=1653688967);
-  background-size: 30px;
-  background-repeat: no-repeat;
 }
 
 #shopify-section-footer > footer > div:nth-child(1) > div > div > div > ul > li:nth-child(5) {
   background-image: url(https://cdn.shopify.com/s/files/1/0550/1871/7362/files/5296514_bird_tweet_twitter_twitter_logo_icon_6d3bcce1-9ffd-4b54-9533-dda5861c4805.png?v=1653688967);
-  background-size: 30px;
-  background-repeat: no-repeat;
 }
 
 #shopify-section-footer > footer > div:nth-child(1) > div > div > div > ul > li a {
@@ -8458,9 +8405,29 @@ a:hover{
 }
 
 #shopify-section-footer > footer > div:nth-child(1) > div > div > div > ul > li a:hover {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 #shopify-section-footer > footer > div:nth-child(1) > div > div > div > ul > li a:link {
-  text-decoration: none;
+  text-decoration: none !important;
+}
+
+#shopify-section-footer > footer > div:nth-child(1) > div > div > div > ul > li:hover {
+  text-decoration: none !important;
+}
+
+#shopify-section-footer > footer > div:nth-child(1) > div > div > div > ul > li:link {
+  text-decoration: none !important;
+}
+
+#shopify-section-footer > footer > div:nth-child(1) > div > div > div > ul > li a:webkit-any-link {
+  text-decoration:none !important;
+}
+
+#shopify-section-footer > footer > div:nth-child(3) > div > div.grid__item.small--hide.full-width.site-footer-item-center-vertically * {
+  align-content: center;
+  float: none;
+  display: flex;
+  justify-content: center;
+
 }
