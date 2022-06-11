@@ -1082,7 +1082,7 @@ textarea {
   display: inherit; }
 
 /*================ #Basic Styles ================*/
-.page-width {
+/* .page-width {
   *zoom: 1;
   margin: 0 200px;
 }
@@ -1105,13 +1105,14 @@ textarea {
     content: '';
     display: table;
     clear: both; }
+ */
 
 .main-content {
   display: block;
-  padding-top: 35px; }
+  padding-top: 5px; }
 
 @media all and (max-width:2561px) and (min-width:1601px) {
-  .main-content{padding-top:70px}
+  .main-content{padding-top:5px}
 }
 
 
@@ -1351,6 +1352,9 @@ symbol.icon:not(.icon--full-color) .icon-error__symbol {
   -webkit-user-select: none;
   user-select: none;
   cursor: default; }
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   @media only screen and (max-width: 749px) {
     .payment-icons {
       line-height: 40px; } }
@@ -1358,6 +1362,15 @@ symbol.icon:not(.icon--full-color) .icon-error__symbol {
     width: 38px;
     height: 24px;
     fill: inherit; }
+
+@media all and (max-width:425px){
+  .payment-icons{
+      display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
 
 /*================ Social Icons ================*/
 .social-icons .icon {
@@ -5540,9 +5553,8 @@ hr {
       line-height: 46px; } }
 
 .site-footer {
-  margin-top: 55px;
-  padding: 45px 0 55px 0; }
-  @media only screen and (min-width: 750px) {
+  padding: 55px 0 55px 0; }
+/*     @media only screen and (min-width: 750px) {
     .site-footer {
       padding-bottom: 35px; } }
   .site-footer h4, .site-footer .h4 {
@@ -5550,7 +5562,16 @@ hr {
     @media only screen and (min-width: 750px) {
       .site-footer h4, .site-footer .h4 {
         min-height: calc(var(--font-size-header) * 0.7);
-        margin-bottom: 25px; } }
+        margin-bottom: 25px; } } */
+
+@media all and (max-width:425px) {
+.site-footer{
+margin-top:100px;
+  padding:30px 0 30px 0;
+}
+}
+
+
 
 .site-footer__content {
   display: -webkit-flex;
@@ -5582,12 +5603,13 @@ hr {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  justify-content:center;
   -webkit-flex: 1 1 100%;
   -moz-flex: 1 1 100%;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
-  margin-bottom: 55px; }
-  @media only screen and (min-width: 750px) {
+}
+/*     @media only screen and (min-width: 750px) {
     .site-footer__item {
       padding: 0 15px 0 15px;
       margin-bottom: 45px; } }
@@ -5597,9 +5619,9 @@ hr {
     padding-right: 0; }
     @media only screen and (max-width: 749px) {
       .site-footer__item:last-of-type {
-        margin-bottom: 0; } }
+        margin-bottom: 0; } } */
 
-@media only screen and (min-width: 750px) {
+/*   @media only screen and (min-width: 750px) {
   .site-footer__item--full-width {
     -webkit-flex: 1 1 100%;
     -moz-flex: 1 1 100%;
@@ -5629,7 +5651,7 @@ hr {
     -webkit-flex: 1 1 50%;
     -moz-flex: 1 1 50%;
     -ms-flex: 1 1 50%;
-    flex: 1 1 50%; } }
+    flex: 1 1 50%; } } */
 
 @media only screen and (min-width: 750px) {
   .site-footer__item--center {
@@ -5656,10 +5678,16 @@ hr {
     margin: 0 auto; } }
 
 .site-footer__hr {
-  margin: 55px 0 30px 0; }
+  margin: 30px 0 30px 0; }
   @media only screen and (min-width: 750px) {
     .site-footer__hr {
-      margin: 45px 0 20px 0; } }
+      margin: 20px 0 20px 0; } }
+
+@media all and (max-width:425px){
+.site-footer__hr{
+margin:30px 0 30px 0;
+}
+}
 
 @media only screen and (max-width: 749px) {
   .site-footer__linklist.list--inline > li {
@@ -5679,6 +5707,12 @@ hr {
   @media only screen and (min-width: 750px) {
     .site-footer__icon-list {
       padding-bottom: 15px; } }
+
+@media all and (max-width:425px) {
+  .site-footer__icon-list{
+    padding:0 20px 30px 20px;
+  }
+}
 
 @media only screen and (min-width: 750px) {
   .site-footer__social-icons {
@@ -5704,21 +5738,21 @@ hr {
 .site-footer__copyright-content {
   font-size: calc(((var(--font-size-base) - 3) / (var(--font-size-base))) * 1em); }
 
-.site-footer__payment-icons .payment-icon {
+/* .site-footer__payment-icons .payment-icon {
   margin-bottom: 5px;
   margin-left: 5px; }
   .site-footer__payment-icons .payment-icon:first-child {
-    margin-left: 0; }
+    margin-left: 0; } */
 
 .site-footer-item-center-vertically {
   padding-top: 7.5px; }
 
-@media only screen and (min-width: 750px) {
+/*   @media only screen and (min-width: 750px) {
   .site-footer-item-tall {
     margin-bottom: 15px;
     height: 46px; }
     .site-footer-item-tall .site-footer__icon-list {
-      padding-bottom: 0; } }
+      padding-bottom: 0; } } */
 
 .feature-row {
   display: -webkit-flex;
@@ -6994,11 +7028,28 @@ hr {
 .store-availability-list__phone {
   margin-bottom: 0; }
 
+/* ============================================================================================== */
+/* ============================================================================================== */
+/* ============================================================================================== */
+/* ============================================================================================== */
+/* ============================================================================================== */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TYLER AND ALEXIS ADD-ONS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ============================================================================================== */
+/* ============================================================================================== */
+/* ============================================================================================== */
+/* ============================================================================================== */
+/* ============================================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+
+/* Universal overrides */
+p {margin: 0 0 0 0}
+.js {padding:0 0 0 0; padding-bottom:0 !important}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HOMEPAGE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* ~~~ Top section homepage ~~~ */
 
@@ -7059,7 +7110,7 @@ body{
 .shopNowImg2 {
   width:70%;
 }
-	
+    
 .shopNow-Spice {
   color:#FFFFFF;
   font-family: 'Be Vietnam Pro';
@@ -7130,7 +7181,7 @@ body{
 .SNP3 {
   margin-bottom:20px !important;
 }
-	
+    
 .shopNow-Spice {
   font-size: 35px;
   letter-spacing: 0.05em;
@@ -7199,7 +7250,7 @@ body{
 .SNP3 {
   margin-bottom:10px !important;
 }
-	
+    
 .shopNow-Spice {
   font-size: 20px;
   letter-spacing: 0.05em;
@@ -7261,7 +7312,7 @@ body{
   position: relative;
   left: 28px;
 }
-	
+    
 .shopNow-Spice {
   font-size: 16px;
   letter-spacing: 0.05em;
@@ -7336,7 +7387,7 @@ body{
 .SNP1 {
   margin-top:35px !important;
 }
-	
+    
 .shopNow-Spice {
   font-size: 15px;
   letter-spacing: 0.05em;
@@ -7373,7 +7424,7 @@ body{
   width: 22.5%;
   height: 25%;
 }
-	
+    
 .shopNow-Spice {
   font-size: 10px;
   line-height: 32px;
@@ -7834,20 +7885,21 @@ ul.grid.grid--uniform.grid--view-items{
   padding: 0 20px;
 }
 
-/******************************************************************************************************* 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-*******************************************************************************************************/
-/* Styling for Under Construction page */
-/******************************************************************************************************* 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-*******************************************************************************************************/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ UNDER CO PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Dev Notes:
+
+.killjoyP and .p2 p will have same font-size and line-height.
+
+*/
+
 body{
   width:100%;
   height:100%;
 }
 
 .wrapper{
-  background-image: url(bg.png);
+  background-image: url(https://cdn.shopify.com/s/files/1/0550/1871/7362/files/bg.png?v=1654215103);
   background-repeat: no-repeat;
   background-size: contain;
   width:100%;
@@ -7858,18 +7910,23 @@ body{
   display:flex;
   justify-content:center;
   align-items:center;
+  margin: 0 0 0 0;
+  padding: 125px 0 0 0;
+}
+
+.heading h1 {
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 700;
-  font-size: 130px;
+  font-size: 95px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin: 50px 0 0 0;
-  padding: 175px 0 0 0;
 }
 
 .dashesStacked {
   width:9.5%;
+  position:relative;
+  bottom:10px;
 }
 
 /* Content */
@@ -7878,11 +7935,11 @@ body{
   flex-direction:column;
   justify-content:center;
   align-items:center;
-  padding: 50px 600px 500px 600px;
+  padding: 50px 300px 300px 300px;
 }
 
 .killjoyImg {
-  width: 50%;
+  width: 40%;
 }
 
 .killjoyP {
@@ -7891,13 +7948,13 @@ body{
   font-style: normal;
   font-weight: 600;
   text-align: center;
-  font-size: 45px;
-  line-height: 55px;
+  font-size: 35px;
+  line-height: 44px;
   letter-spacing: 0.05em;
 }
 
 .P1 {
-  margin: 100px 0 0 0;
+  margin: 75px 0 0 0;
 }
 
 .july {
@@ -7915,24 +7972,25 @@ body{
 .bottom {
   display:flex;
   flex-direction:row;
-  margin: 250px 0 0 0;
+  margin: 150px 0 0 0;
   justify-content:center;
 }
 
 .dotsStacked {
-  width:10%;
+  width:7%;
   height:1%;
 }
 
 .bannersImg {
   border-radius:27px;
-  width:38%;
+  width:30%;
 }
 
 .p2 {
   display:flex;
   flex-direction: column;
-  gap:30px;
+/*   gap:30px; */
+  justify-content:space-around;
   margin-left: 50px;
 }
 
@@ -7942,8 +8000,8 @@ body{
   font-style: normal;
   font-weight: 500;
   text-align: center;
-  font-size: 40px;
-  line-height: 55px;
+  font-size: 35px;
+  line-height: 44px;
   letter-spacing: 0.05em;
   text-align:left;
 }
@@ -7974,14 +8032,22 @@ a:hover{
 
 /* Heading section */
 .heading{
-  font-size: 75px;
   margin: 0 0 0 0;
   padding: 113px 0 0 0;
 }
+  
+.heading h1 {
+  font-size: 100px;
+}
 
+.dashesStacked {
+  position:relative;
+  bottom:10px;
+}  
+  
 /* Content */
 .pageContent{
-  padding: 25px 300px 275px 300px;
+  padding: 25px 300px 225px 300px;
 }
 
 .killjoyImg {
@@ -7989,16 +8055,12 @@ a:hover{
 }
 
 .killjoyP {
-  font-size: 25px;
-  line-height: 29px;
+  font-size: 32px;
+  line-height: 38px;
 }
 
 .P1 {
-  margin: 25px 0 0 0;
-}
-
-.july {
-  gap:15px;
+  margin: 50px 0 0 0;
 }
 
 .dotsRow {
@@ -8010,22 +8072,21 @@ a:hover{
 }
 
 .dotsStacked {
-  width:7%;
+  width:5%;
   height:1%;
 }
 
 .bannersImg {
-  width:30%;
+  width:28%;
 }
 
 .p2 {
-  gap:30px;
   margin-left: 25px;
 }
 
 .p2 p {
-  font-size: 22px;
-  line-height: 28px;
+  font-size: 30px;
+  line-height: 36px;
 }
 
 }
@@ -8040,22 +8101,22 @@ a:hover{
 
 /* Heading section */
 .heading{
-  font-size: 75px;
   margin: 0 0 0 0;
   padding: 113px 0 0 0;
 }
+  
+.heading h1 {
+  font-size: 72px;
+}
 
 .dashesStacked {
-  width:9.5%;
+  position:relative;
+  bottom:10px;
 }
 
 /* Content */
 .pageContent{
-  padding: 25px 300px 275px 300px;
-}
-
-.killjoyImg {
-  width: 35%;
+  padding: 25px 300px 200px 300px;
 }
 
 .killjoyP {
@@ -8064,15 +8125,7 @@ a:hover{
 }
 
 .P1 {
-  margin: 25px 0 0 0;
-}
-
-.july {
-  gap:15px;
-}
-
-.dotsRow {
-  width:6%;
+  margin: 50px 0 0 0;
 }
 
 .bottom {
@@ -8089,7 +8142,6 @@ a:hover{
 }
 
 .p2 {
-  gap:30px;
   margin-left: 25px;
 }
 
@@ -8109,22 +8161,22 @@ a:hover{
 
 /* Heading section */
 .heading{
-  font-size: 60px;
   margin: 0 0 0 0;
   padding: 100px 0 0 0;
 }
+  
+.heading h1 {
+  font-size: 60px;
+}
 
 .dashesStacked {
-  width:9.5%;
+  position:relative;
+  bottom:9px;
 }
 
 /* Content */
 .pageContent{
-  padding: 25px 250px 200px 250px;
-}
-
-.killjoyImg {
-  width: 35%;
+  padding: 25px 250px 175px 250px;
 }
 
 .killjoyP {
@@ -8133,17 +8185,9 @@ a:hover{
 }
 
 .P1 {
-  margin: 25px 0 0 0;
+  margin: 50px 0 0 0;
 }
-
-.july {
-  gap:15px;
-}
-
-.dotsRow {
-  width:6%;
-}
-
+  
 .bottom {
   margin: 100px 0 0 0;
 }
@@ -8179,16 +8223,21 @@ a:hover{
 .heading{
   font-size: 50px;
   margin: 0 0 0 0;
-  padding: 65px 0 0 0;
+  padding: 80px 0 0 0;
+}
+  
+.heading h1 {
+  font-size:50px;
 }
 
 .dashesStacked {
-  width:9.5%;
+  position:relative;
+  bottom:10px;
 }
 
 /* Content */
 .pageContent{
-  padding: 10px 250px 150px 250px;
+  padding: 10px 250px 125px 250px;
 }
 
 .killjoyImg {
@@ -8241,21 +8290,23 @@ a:hover{
 
 @media all and (max-width: 426px) {
 .wrapper {
-  width:100vw;
-  height:100vh;
-  background-size:contain;
-  background-repeat:repeat;
+  background-size:cover;
+  margin-top:75px;
 }
 
   /* Heading section */
   .heading{
-    font-size: 20px;
     margin: 0 0 0 0;
-    padding: 33px 0 0 0;
+    padding: 50px 0 0 0;
+  }
+  
+  .heading h1 {
+    font-size: 20px;
   }
   
   .dashesStacked {
-    width:9%;
+    position:relative;
+    bottom:10px;
   }
   
   /* Content */
@@ -8273,7 +8324,7 @@ a:hover{
   }
   
   .P1 {
-    margin: 5px 0 0 0;
+    margin: 15px 0 0 0;
   }
   
   .july {
@@ -8300,7 +8351,6 @@ a:hover{
   
   .p2 {
     margin-left: 5px;
-    gap:12px;
   }
   
   .p2 p {
@@ -8309,6 +8359,7 @@ a:hover{
   }
   
 }
+
 
 /******************************************************************************************************* 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
@@ -8320,14 +8371,13 @@ a:hover{
 
 
 
-
-/* Header */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .site-header {
-	background-color: #303030;
+    background-color: #303030;
 }
 
 .site-header * {
-	background-color: #303030;
+    background-color: #303030;
 
 }
 
@@ -8345,6 +8395,7 @@ a:hover{
   font-weight: 700;
   padding: 5px;
   background: none;
+  text-transform:uppercase;
 
 }
 
@@ -8352,8 +8403,6 @@ a:hover{
   background-color: rgba(98, 98, 98, 0.5);
   border-radius: 10px;
 }
-
-
 
 .site-nav__link--active .site-nav__label {
   background-color: rgba(98, 98, 98, 0.5);
@@ -8363,7 +8412,7 @@ a:hover{
 .site-nav__label {
   background-color: rgba(98, 98, 98, 0.5);
   border-radius: 10px;
-   border-bottom: none;
+  border-bottom: none;
 }
 
 #SiteNav > li.site-nav--active {
@@ -8371,7 +8420,8 @@ a:hover{
   border-radius: 10px;
 }
 
-/* FOOTER */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 #shopify-section-footer > footer > div:nth-child(1) > div > div > div > ul > li {
   background-position: center;
   background-size:30px;
@@ -8429,5 +8479,31 @@ a:hover{
   float: none;
   display: flex;
   justify-content: center;
+  gap:10px;
+}
 
+/* Make footer social media icons in a row */
+.site-footer__linklist {
+  display:flex;
+  flex-direction:row;
+  gap:75px;
+}
+
+@media all and (max-width:425px) {
+.site-footer__linklist{
+  gap:25px;
+}
+}
+
+/* Fixing padding on the list items (social media icons) */
+.site-footer__linklist-item {
+padding: 10px;
+}
+
+
+/* Most monitors (1980px) */
+@media all and (max-width: 1981px) and (min-width:1442px) {
+.site-footer{
+  padding:55px 0 55px 0;
+}
 }
