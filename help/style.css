@@ -1352,9 +1352,7 @@ symbol.icon:not(.icon--full-color) .icon-error__symbol {
   -webkit-user-select: none;
   user-select: none;
   cursor: default; }
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+
   @media only screen and (max-width: 749px) {
     .payment-icons {
       line-height: 40px; } }
@@ -9466,15 +9464,15 @@ font-size: 96px;
 }
 
 #helpSlashes1 {
-width: 6.5%;
 position: relative;
+width: 6.5%;
 top: -2px;
 left: -12px;
 }
 
 #helpSlashes2 {
-width: 9%;
 position: relative;
+width: 9%;
 bottom: 3px;
 right: 7px;
 }
@@ -9539,10 +9537,16 @@ font-family: 'Be Vietnam Pro';
 font-weight: 300;
 text-transform: none;
 letter-spacing: 0.05em;
-font-size: 1.8rem;
-line-height: 38px;
 padding-right: 4rem;
 margin: 1rem 0;
+font-size: 1.8rem;
+line-height: 38px;
+}
+
+#help_spanCannot {
+color: #FA4454;
+font-style:italic;
+font-weight:600;
 }
 
 .help_contactHeading {
@@ -9562,6 +9566,10 @@ font-size:1.8rem;
 color: rgba(255,255,255,0.8);
 }
 
+.help_contactForm {
+margin-top:2rem;
+}
+
 #ContactForm {
 display:flex;
 flex-direction:column;
@@ -9577,9 +9585,18 @@ border: none;
 height:6rem;
 }
 
+
+#help_contactFormMessage {
+padding-right:2rem;
+}
+
 #ContactForm-message {
 border-radius:75px;
 height:30rem;
+}
+
+#ContactForm textarea {
+padding: 2.5rem 3.5rem;
 }
 
 #ContactForm input, #ContactForm-message, #ContactForm input::placeholder, #ContactForm-message::placeholder, #ContactForm input:focus, #ContactForm-message:focus {
@@ -9595,10 +9612,6 @@ font-size: 1.8rem;
 margin-left:3rem;
 }
 
-#ContactForm textarea {
-padding: 2.5rem 3.5rem;
-}
-
 #ContactForm label, #ContactForm .btn {
 font-family:'Montserrat';
 text-transform:uppercase;
@@ -9607,15 +9620,20 @@ letter-spacing:0.1em;
 font-size:1.8rem;
 }
 
-
 #ContactForm .btn {
 background-color: #FA4454;
 color: rgba(255,255,255);
 border-radius:10rem;
+text-align:center;
 margin-top: 2rem;
 width:18rem;
 height:4rem;
 font-size:1.8rem;
+}
+
+#ContactForm .btn value {
+align-self:center;
+text-align:center;
 }
 
 #help_contactSubmit {
@@ -9624,21 +9642,513 @@ justify-content:center;
 }
 
 #ContactForm-message::-webkit-scrollbar {
-  width: 15px;
-  background-color: #f5f5f5;
-  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+width: 15px;
+background-color: #f5f5f5;
+border-radius: 75rem;
+height:50%;
+margin-right:10px;
+box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+-moz-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+-webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
 }
 
 #ContactForm-message::-webkit-scrollbar-thumb {
-  border-radius: 75rem;
-  background-color: #3e3e3e;
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+border-radius: 75rem;
+background-color: #3e3e3e;
+margin-right:10px;
+box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+-moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+-ms-border-radius: 10px;
+-o-border-radius: 10px;
 }
+
+#ContactForm-message::-webkit-scrollbar-track {
+border-radius:75rem;
+overflow:hidden;
+height:50%;
+}
+
+#ContactForm-message::-webkit-scrollbar-track-piece {
+border-radius:75rem;
+overflow:hidden;
+height:50%;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~ Help page responsiveness ~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Large laptops - 1440px */
+@media all and (max-width: 1441px) and (min-width: 1282px) {
+.helpWrapper {
+padding: 120px 260px;
+}
+
+.helpHeading {
+margin-bottom:3rem;
+}
+
+.helpHeading h1 {
+font-size: 75px;
+}
+
+#helpSlashes1 {
+width: 7%;
+top: -4px;
+left: -14px;
+}
+
+#helpSlashes2 {
+width: 10%;
+bottom: 5px;
+right: -4px;
+}
+
+.helpButtons {
+gap:2rem;
+}
+
+.accordionContainer {
+font-size: 2rem;
+}
+
+.panel {
+font-size: 1.4rem;
+line-height: 30px;
+}
+
+.help_contactHeading {
+margin-top:3.125rem;
+font-size:1.4rem;
+}
+
+#ContactForm {
+gap: 2rem;
+}
+
+#ContactForm input {
+height:4.7rem;
+}
+
+#help_contactFormMessage {
+padding-right:0;
+}
+
+#ContactForm-message {
+border-radius:75px;
+height:23.4rem;
+}
+
+#ContactForm textarea {
+padding: 2rem 3rem;
+}
+
+#ContactForm input, #ContactForm-message, #ContactForm input::placeholder, #ContactForm-message::placeholder, #ContactForm input:focus, #ContactForm-message:focus {
+font-size: 1.4rem;
+}
+
+#ContactForm label, #ContactForm input::placeholder, #ContactForm-message::placeholder {
+margin-left:2.3rem;
+}
+
+#ContactForm label, #ContactForm .btn {
+font-size:1.4rem;
+}
+
+
+#ContactForm .btn {
+margin-top: 1.6rem;
+width:14rem;
+height:3.125rem;
+font-size:1.4rem;
+}
+
+#ContactForm-message::-webkit-scrollbar {
+width: 11.8px;
+}
+
+} /* End of Large laptops - 1440px */
+
+
+
+/* Medium laptops - 1280px */
+@media all and (max-width: 1281px) and (min-width: 1026px) {
+.helpWrapper {
+padding: 94px 250px;
+}
+
+.helpHeading {
+margin-bottom:2rem;
+}
+
+.helpHeading h1 {
+font-size: 62px;
+}
+
+#helpSlashes1 {
+width: 6.5%;
+top: -5px;
+left: -14px;
+}
+
+#helpSlashes2 {
+width: 9%;
+bottom: 5px;
+right: -4px;
+}
+
+.helpButtons {
+gap:2rem;
+}
+
+.accordionContainer {
+font-size: 1.6rem;
+}
+
+.panel {
+line-height: 26px;
+}
+
+.panel, .help_contactHeading, #ContactForm input, #ContactForm-message, #ContactForm input::placeholder, #ContactForm-message::placeholder, #ContactForm input:focus, #ContactForm-message:focus, #ContactForm label, #ContactForm .btn {
+font-size: 1.2rem;
+}
+
+#help_contactFormMessage {
+padding: 0;
+}
+
+.help_contactHeading {
+margin-top:2.44rem;
+}
+
+#ContactForm {
+gap: 2rem;
+}
+
+#ContactForm input {
+height:3.8rem;
+}
+
+#ContactForm-message {
+border-radius:62px;
+height:19.3rem;
+}
+
+#ContactForm textarea {
+padding: 1.6rem 2.5rem;
+}
+
+#ContactForm label, #ContactForm input::placeholder, #ContactForm-message::placeholder {
+margin-left:1.9rem;
+}
+
+#ContactForm .btn {
+margin-top: 1.3rem;
+width:11.5rem;
+height:2.6rem;
+}
+
+#ContactForm-message::-webkit-scrollbar {
+width: 9.7px;
+}
+
+} /* End of Medium Laptops - 1280px */
+
+/* Small laptops - 1024px */
+@media all and (max-width: 1025px) and (min-width: 750px) {
+.helpWrapper {
+padding: 70px 200px;
+}
+
+.helpHeading {
+margin-bottom:2rem;
+}
+
+.helpHeading h1 {
+font-size: 56px;
+}
+
+#helpSlashes1 {
+width: 7.5%;
+top: -5px;
+left: -14px;
+}
+
+#helpSlashes2 {
+width: 10%;
+bottom: 5px;
+right: -4px;
+}
+
+.helpButtons {
+gap:2rem;
+}
+
+.accordionContainer {
+font-size: 1.2rem;
+padding: 0.8rem 2.6rem;
+}
+
+.panel {
+line-height: 23.4px;
+}
+
+.panel, .help_contactHeading, #ContactForm input, #ContactForm-message, #ContactForm input::placeholder, #ContactForm-message::placeholder, #ContactForm input:focus, #ContactForm-message:focus, #ContactForm label, #ContactForm .btn {
+font-size: 1rem;
+}
+
+.help_contactForm {
+margin-top: 1rem;
+}  
+
+.help_contactHeading {
+margin-top:2rem;
+}
+
+#ContactForm {
+gap: 1.8rem;
+}
+
+#ContactForm input {
+height:3.4rem;
+}
+
+#help_contactFormMessage {
+padding: 0;
+}
+
+#ContactForm-message {
+border-radius:56px;
+height:17.4rem;
+}
+
+#ContactForm textarea {
+padding: 1.44rem 2.25rem;
+}
+
+#ContactForm label, #ContactForm input::placeholder, #ContactForm-message::placeholder {
+margin-left:1.7rem;
+}
+
+#ContactForm .btn {
+margin-top: 1.17rem;
+width:10.35rem;
+height:2.3rem;
+}
+
+#ContactForm-message::-webkit-scrollbar {
+width: 8.7px;
+}
+
+} /* End of Small Laptops - 1024px */
+
+/* Large phone screens - 425px */
+@media all and (max-width: 450px) and (min-width: 351px) {
+.helpWrapper {
+padding: 25px 75px;
+}
+
+.helpHeading {
+margin-bottom:1rem;
+}
+
+.helpHeading h1 {
+font-size: 25px;
+margin: 0;
+}
+
+#helpSlashes1 {
+width: 7.8%;
+top: 2px;
+left: -6px;
+}
+
+#helpSlashes2 {
+width: 10%;
+bottom: -1px;
+right: -2px;
+}
+
+.helpButtons {
+gap:0.5rem;
+}
+
+.accordionContainer {
+font-size: 0.5rem;
+padding: 0.4rem 1rem;
+}
+
+.accordionContainer {
+border-radius:24px;
+}
+
+.panel {
+line-height: 9px;
+padding-right:1rem;
+margin: 0.3rem 0;
+}
+
+.panel, .help_contactHeading, #ContactForm input, #ContactForm-message, #ContactForm input::placeholder, #ContactForm-message::placeholder, #ContactForm input:focus, #ContactForm-message:focus, #ContactForm label, #ContactForm .btn {
+font-size: 0.4rem;
+}
+
+.help_contactHeading {
+margin-top:0.5rem;
+}
+
+.help_contactForm {
+margin-top: 0.5rem;
+}  
+
+#ContactForm {
+gap: 0.8rem;
+}
+
+#ContactForm input {
+height:1.5rem;
+}
+
+#help_contactFormMessage {
+padding: 0;
+}
+
+#ContactForm-message {
+border-radius:25px;
+height:7.8rem;
+}
+
+#ContactForm textarea {
+padding: 0.648rem 1rem;
+}
+
+#ContactForm label, #ContactForm input::placeholder, #ContactForm-message::placeholder {
+margin-left:0.8rem;
+margin-bottom:0.5px;
+}
+
+#ContactForm .btn {
+margin: 0;
+padding:0;
+width:4.66rem;
+height:1rem;
+}
+
+#ContactForm-message::-webkit-scrollbar {
+width: 3.9px;
+}
+
+} /* End of Large phone screens - 425px */
+
+/* Small (most) phone screens - 320px */
+@media all and (max-width: 350px) {
+.helpWrapper {
+padding: 15px 62px;
+}
+
+.helpHeading {
+margin-bottom:0.5rem;
+}
+
+.helpHeading h1 {
+font-size: 18px;
+margin: 0;
+}
+
+#helpSlashes1 {
+width: 8%;
+top: 1px;
+left: -4px;
+}
+
+#helpSlashes2 {
+width: 10.5%;
+bottom: 0px;
+right: -2px;
+}
+
+.helpButtons {
+gap:0.5rem;
+}
+
+.accordionContainer {
+font-size: 0.36rem;
+padding: 0.3rem 0.72rem;
+}
+
+.accordionContainer {
+border-radius:24px;
+}
+
+.active {
+border-radius:14px;
+}
+
+.panel {
+line-height: 6.5px;
+padding-right:0.8rem;
+margin: 0.1rem 0;
+}
+
+.panel, .help_contactHeading, #ContactForm input, #ContactForm-message, #ContactForm input::placeholder, #ContactForm-message::placeholder, #ContactForm input:focus, #ContactForm-message:focus, #ContactForm label, #ContactForm .btn {
+font-size: 0.288rem;
+}
+
+.help_contactHeading {
+margin-top:0.36rem;
+}
+
+.help_contactForm {
+margin-top: 0.36rem;
+}  
+
+#ContactForm {
+gap: 0.576rem;
+}
+
+#ContactForm section {
+display:flex;
+flex-direction:column;
+}
+
+#ContactForm input {
+height:1.08rem;
+padding: 3px 10px;
+}
+
+#help_contactFormMessage {
+padding: 0;
+}
+
+#ContactForm-message {
+border-radius:18px;
+height:5.62rem;
+}
+
+#ContactForm textarea {
+padding: 0.467rem 0.72rem;
+}
+
+#ContactForm label, #ContactForm input::placeholder, #ContactForm-message::placeholder {
+margin-left:0.576rem;
+margin-bottom:0.36px;
+}
+
+#ContactForm #help_contactSubmit {
+align-self:center;
+}  
+
+#ContactForm .btn {
+margin: 0;
+padding:0;
+width:3.36rem;
+height:0.72rem;
+}
+
+#ContactForm-message::-webkit-scrollbar {
+width: 2.8px;
+}
+
+} /* End of Small (most) phone screens - 320px */
