@@ -3,7 +3,7 @@
 
 
 Let background "cover". 
-
+Download backgrounds as svg's.
 
 
 Universal overrides:  
@@ -59,7 +59,14 @@ Small Mobile 320px
 @media all and (max-width: 1025px) and (min-width: 750px) {} /* End of Small Laptops - 1024px */
 
 /* Large phone screens - 425px */
-@media all and (max-width: 425px) and (min-width: 351px) {} /* End of Large phone screens - 425px */
+@media all and (max-width: 425px) and (min-width: 377px) {} /* End of Large phone screens - 425px */
 
-/* Small (most) phone screens - 320px */
-@media all and (max-width: 350px) {} /* End of Small (most) phone screens - 320px */
+/* Medium phone screens - 375px */
+@media all and (max-width: 376px) and (min-width: 322px) {} /* End of Large phone screens - 425px */
+
+/* Small phone screens - 320px */
+@media all and (max-width: 321px) {} /* End of Small (most) phone screens - 320px */
+
+
+/* My monitors: 1920 x 937px ... screen size is 1920 x 1080 */
+/* iPhone 13 + iphone 13 pro: 390px x 844px */
