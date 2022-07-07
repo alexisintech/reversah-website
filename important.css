@@ -59,10 +59,10 @@ Small Mobile 320px
 @media all and (max-width: 1025px) and (min-width: 750px) {} /* End of Small Laptops - 1024px */
 
 /* Large phone screens - 425px */
-@media all and (max-width: 425px) and (min-width: 377px) {} /* End of Large phone screens - 425px */
+@media all and (max-width: 450px) and (min-width: 377px) {} /* End of Large phone screens - 425px */
 
 /* Medium phone screens - 375px */
-@media all and (max-width: 376px) and (min-width: 322px) {} /* End of Large phone screens - 425px */
+@media all and (max-width: 376px) and (min-width: 322px) {} /* End of Large phone screens - 375px */
 
 /* Small phone screens - 320px */
 @media all and (max-width: 321px) {} /* End of Small (most) phone screens - 320px */
