@@ -1,0 +1,389 @@
+<!-- I coded this in vscode, so I suggest copy and pasting this into vscode and not directly editing the code here. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+    
+    <div class="visualizerWrapper">
+
+        <div id="banner">
+            <img id="banner-img" src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/jett-banner.png?v=1642532672"> <img id="rank-icon" style="width: 60px;" src="https://cdn.shopify.com/s/files/1/0550/1871/7362/%20files/blank-dot.png?v=1641757279">
+            <p id="banner-gamertag"> </p>
+            <p id="banner-title"> </p>
+        </div>
+    
+        <section class="selector">
+    
+            <section class="visualizerHeading">
+                <img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/visualizerHeading.png?v=1658449267">
+            </section>
+    
+            <section class="agentrankdivision">
+                <section class="accordionContainer">
+                    <p class="accordion">Agent</p>
+                    <div class="panel">
+                        <ul>
+                            <li id="astra"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Astra_icon_67c0450a-a17e-4b7e-9424-c1595dd3ba4e.png?v=1642020734" alt="Astra"></li>
+                            <li id="brim"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Brimstone_icon_c27384ed-6899-4b8d-b36a-01780f5cb5ce.png?v=1642020734" alt="Brim"></li>
+                            <li id="cypher"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Cypher_icon_f32f5383-95a5-44b5-b6e0-e2a1c66c6162.png?v=1642020734" alt="Cypher"></li>
+                            <li id="jett"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Jett_icon_32ec99f1-551f-481f-bcf4-bef7d5a57e52.png?v=1642020734" alt="Jett"></li>
+                            <li id="killjoy"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Killjoy_icon_d6381f06-777f-4f9f-bc04-dcdd825001cc.png?v=1642020734" alt="Killjoy"></li>
+                            <li id="omen"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Omen_icon_16639c90-35eb-4fd0-9e86-8757b53d3831.png?v=1642020734" alt="Omen"></li>
+                            <li id="phoenix"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Phoenix_icon_0231d78c-b092-4b16-b278-778e78d019d4.png?v=1642020734" alt="Phoenix"></li>
+                            <li id="raze"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Raze_icon_a805c23e-acc3-457d-9df1-ebb1b47e2895.png?v=1642020734" alt="Raze"></li>
+                            <li id="reyna"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Reyna_icon_eef16795-3295-462c-8cbf-cd1ca9f62863.png?v=1642192341" alt="Reyna"></li>
+                            <li id="sage"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Sage_icon_184c6c52-600d-4f82-a257-657672f1e5fe.png?v=1642020734" alt="Sage"></li>
+                            <li id="skye"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Skye_icon_6c4dfe2f-bf95-4714-ab20-cb235a559c68.png?v=1642020734" alt="Skye"></li>
+                            <li id="sova"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Sova_icon_f2ed05b8-00a2-4631-88c1-ea80558e6bc1.png?v=1642020734" alt="Sova"></li>
+                            <li id="viper"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Viper_icon_22a2a3c5-1567-4425-99b4-0319d078c320.png?v=1642020734" alt="Viper"></li>
+                            <li id="yoru"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Yoru_icon_fe96d60e-5029-4730-80be-7fbe6f0c2bab.png?v=1642020734" alt="Yoru"></li>
+                            <li id="neon"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/neon-headshot.png?v=1658452371" alt="Neon"></li>
+                            <li id="chamber"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/chamber-headshot.png?v=1658452371" alt="Chamber"></li>
+                        </ul>
+                    </div> <!-- end of .panel -->
+                </section> <!-- end of .accordionContainer-->
+                <p class="visualizerLoading"> Loading the agent banner may take a minute... thank you for being patient! </p>
+    
+                <section class="accordionContainer">
+                    <p class="accordion">Rank</p>
+                    <div class="panel">
+                        <ul id="ranks">
+                            <li id="none" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/None.png?v=1642192639" alt="No rank"></li>
+                            <li id="iron" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Ir1.png?v=1642027167" alt="Iron"></li>
+                            <li id="bronze" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/B1.png?v=1642027167" alt="Bronze"></li>
+                            <li id="silver" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/S1.png?v=1642027167" alt="Silver"></li>
+                            <li id="gold" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/G1.png?v=1642027167" alt="Gold"></li>
+                            <li id="platinum" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/P1.png?v=1642027168" alt="Platinum"></li>
+                            <li id="diamond" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/D1.png?v=1642027167" alt="Diamond"></li>
+                            <li id="immortal" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Im1.png?v=1642027168" alt="Immortal"></li>
+                            <li id="radiant" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Radiant.png?v=1642027168" alt="Radiant Rank"></li>
+                            <li id="heart" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/H3.png?v=1642027168" alt="Heart Rank"></li>
+                        </ul> <!-- end of #ranks -->
+                    </div> <!-- end of .panel -->
+                </section> <!-- end of .accordionContainer -->
+    
+                <section class="accordionContainer">
+                    <p class="accordion">Division</p>
+                    <div class="panel">
+                        <ul id="division-selector">
+                            <li id="1">1</li>
+                            <li id="2">2</li>
+                            <li id="3">3</li>
+                        </ul>
+                    </div> <!-- end of .panel -->
+                </section> <!-- end of .accordionContainer-->
+            </section> <!-- .agentrankdivision -->
+    
+            <section class="nametitle">
+                <p>Name:</p>
+                <input id="gamertag" style="text-align: center;" size="50" type="text" name="gamertag" class="agent-selector-input" placeholder="Type your gamertag or leave blank">
+                <p>Title:</p>
+                <input id="gametitle" size="50" type="text" name="gametitle" class="agent-selector-input" placeholder="Type your title or leave blank">
+                <button id="change-title-name">Change Text</button>
+                <button id="buy-banner">Buy This Banner!</button>
+            </section> <!-- end of .nametitle -->
+    
+    </section>
+    </div> <!-- end of .visualizerWrapper -->
+    
+    
+    <script src="theme.js"></script>
+    
+    <script>// <![CDATA[
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    
+    let banners = ['https://cdn.shopify.com/s/files/1/0550/1871/7362/files/astra-banner.png?v=1642532672',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/brim-banner.png?v=1642532672',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/cypher-banner.png?v=1642532671',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/jett-banner.png?v=1642532672',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/killjoy-banner.png?v=1642532672',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/omen-banner.png?v=1642532672',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/phoenix-banner.png?v=1642532671',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/raze-banner.png?v=1642532672',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/reyna-banner.png?v=1642532672',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/sage-banner_06de2787-5978-4182-b231-1ce2d86d275c.png?v=1648222934',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/skye-banner.png?v=1642532672',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/sova-banner.png?v=1642532672',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/viper-banner.png?v=1642532672',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/yoru-banner.png?v=1642532672',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/neon-banner.png?v=1642532672',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/chamber-banner.png?v=1642532672']
+    
+    let ranks = ['https://cdn.shopify.com/s/files/1/0550/1871/7362/files/blank-dot.png?v=1641757279',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Ir1.png?v=1642027167',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Ir2.png?v=1642027167',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Ir3.png?v=1642027167',
+    
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/B1.png?v=1642027167',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/B2.png?v=1642027167',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/B3.png?v=1642027167',
+    
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/S1.png?v=1642027167',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/S2.png?v=1642027168',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/S3.png?v=1642027168',
+    
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/G1.png?v=1642027167',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/G2.png?v=1642027168',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/G3.png?v=1642027168',
+    
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/P1.png?v=1642027168',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/P2.png?v=1642027167',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/P3.png?v=1642027168',
+    
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/D1.png?v=1642027167',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/D2.png?v=1642027167',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/D3.png?v=1642027167',
+    
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Im1.png?v=1642027168',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Im2.png?v=1642027167',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Im3.png?v=1642027168',
+                     
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Radiant.png?v=1642027168',
+                     'https://cdn.shopify.com/s/files/1/0550/1871/7362/files/H3.png?v=1642027168']
+    
+            function highlight()
+            {
+                var banner = document.querySelector('#banner-img')
+                var rank = document.querySelector('#rank-icon')
+                var divisionSelection = document.querySelector('#division')
+                if (this.id == "astra") {
+                  banner.src = banners[0]
+                  selectedAgent = "astra" 
+                } else if (this.id == "brim") {
+                  banner.src = banners[1]
+                  selectedAgent = "brim"
+                } else if (this.id == "cypher") {
+                  banner.src = banners[2]
+                  selectedAgent = "cypher"
+                }else if (this.id == "jett") {
+                  banner.src = banners[3]
+                  selectedAgent = "jett"
+                }else if (this.id == "killjoy") {
+                  banner.src = banners[4]
+                  selectedAgent = "killjoy"
+                }else if (this.id == "omen") {
+                  banner.src = banners[5]
+                  selectedAgent = "omen"
+                } else if (this.id == "phoenix") {
+                  banner.src = banners[6]
+                  selectedAgent = "phoenix"
+                } else if (this.id == "raze") {
+                  banner.src = banners[7]
+                  selectedAgent = "raze"
+                } else if (this.id == "reyna") {
+                  banner.src = banners[8]
+                  selectedAgent = "reyna"
+                } else if (this.id == "sage") {
+                  banner.src = banners[9]
+                  selectedAgent = "sage"
+                } else if (this.id == "skye") {
+                   banner.src = banners[10]
+                   selectedAgent = "skye"
+                } else if (this.id == "sova") {
+                  banner.src = banners[11]
+                  selectedAgent = "sova"
+                } else if (this.id == "viper") {
+                  banner.src = banners[12]
+                  selectedAgent = "viper"
+                } else if (this.id == "yoru") {
+                  banner.src = banners[13]
+                  selectedAgent = "yoru"
+                } else if (this.id == "neon") {
+                  banner.src = banners[14]
+                  selectedAgent = "neon"
+                } else if (this.id == "chamber") {
+                  banner.src = banners[15]
+                  selectedAgent = "chamber"
+                } 
+    
+                else if (this.id == "none") {
+                  rank.src = ranks[0];
+                  selectedRank = "none";
+                  if (divisionSelection.style.display != "none") {
+                    divisionSelection.style.display = "none";
+                    
+                  }
+                } else if (this.id == "iron") {
+                  rank.src = ranks[1];
+                  selectedRank = "iron";
+                  if (divisionSelection.style.display == "none") {
+                    divisionSelection.style.display = "block";
+                    
+                  }
+                } else if (this.id == "bronze") {
+                  rank.src = ranks[4];
+                  selectedRank = "bronze";
+                  if (divisionSelection.style.display == "none") {
+                    divisionSelection.style.display = "block";
+                    
+                  }
+                } else if (this.id == "silver") {
+                  rank.src = ranks[7];
+                  selectedRank = "silver";
+                  if (divisionSelection.style.display== "none") {
+                    divisionSelection.style.display = "block";
+                    
+                  }
+                } else if (this.id == "gold") {
+                  rank.src = ranks[10];
+                  selectedRank = "gold";
+                  if (divisionSelection.style.display == "none") {
+                    divisionSelection.style.display = "block";
+                    
+                  }
+                } else if (this.id == "platinum") {
+                  rank.src = ranks[13];
+                  selectedRank = "platinum";
+                  if (divisionSelection.style.display == "none") {
+                    divisionSelection.style.display = "block";
+                    
+                  }
+                } else if (this.id == "diamond") {
+                  rank.src = ranks[16];
+                  selectedRank = "diamond";
+                  if (divisionSelection.style.display == "none") {
+                    divisionSelection.style.display = "block";
+                  }
+                } else if (this.id == "immortal") {
+                  rank.src = ranks[19];
+                  selectedRank = "immortal";
+                  if (divisionSelection.style.display == "none") {
+                    divisionSelection.style.display = "block";
+                  }
+                }else if (this.id == "radiant") {
+                  rank.src = ranks[22];
+                  selectedRank = "none";
+                  if (divisionSelection.style.display != "none") {
+                    divisionSelection.style.display = "none";
+                    
+                  }
+                } else if (this.id == "heart") {
+                  rank.src = ranks[23];
+                  selectedRank = "none";
+                  if (divisionSelection.style.display != "none") {
+                    divisionSelection.style.display = "none";
+                    
+                  }
+                }
+    
+                else if (this.id == "1") {
+                  if (selectedRank != "none") {
+                    if (selectedRank == "iron") {
+                      rank.src = ranks[1];
+                    } else if (selectedRank == "bronze") {
+                      rank.src = ranks[4];
+                    } else if (selectedRank == "silver") {
+                      rank.src = ranks[7];
+                    } else if (selectedRank == "gold") {
+                      rank.src = ranks[10];
+                    } else if (selectedRank == "platinum") {
+                      rank.src = ranks[13];
+                    } else if (selectedRank == "diamond") {
+                      rank.src = ranks[16];
+                    } else if (selectedRank == "immortal") {
+                      rank.src = ranks[19];
+                    }
+                  }
+    
+                } else if (this.id == "2") {
+                  if (selectedRank != "none") {
+                    if (selectedRank == "iron") {
+                      rank.src = ranks[2];
+                    } else if (selectedRank == "bronze") {
+                      rank.src = ranks[5];
+                    } else if (selectedRank == "silver") {
+                      rank.src = ranks[8];
+                    } else if (selectedRank == "gold") {
+                      rank.src = ranks[11];
+                    } else if (selectedRank == "platinum") {
+                      rank.src = ranks[14];
+                    } else if (selectedRank == "diamond") {
+                      rank.src = ranks[17];
+                    } else if (selectedRank == "immortal") {
+                      rank.src = ranks[20];
+                    }
+    
+                  }
+                } else if (this.id == "3") {
+                  if (selectedRank != "none") {
+                    if (selectedRank == "iron") {
+                      rank.src = ranks[3];
+                    } else if (selectedRank == "bronze") {
+                      rank.src = ranks[6];
+                    } else if (selectedRank == "silver") {
+                      rank.src = ranks[9];
+                    } else if (selectedRank == "gold") {
+                      rank.src = ranks[12];
+                    } else if (selectedRank == "platinum") {
+                      rank.src = ranks[15];
+                    } else if (selectedRank == "diamond") {
+                      rank.src = ranks[18];
+                    } else if (selectedRank == "immortal") {
+                      rank.src = ranks[21];
+                    }
+    
+                  }
+                }
+    
+            }
+    
+            function updateText() {
+              var new_gamertag = document.querySelector('#gamertag');
+              var new_title = document.querySelector('#gametitle');
+              var gamertag = document.querySelector('#banner-gamertag');
+              var title = document.querySelector('#banner-title');
+              console.log(new_gamertag.value);
+              gamertag.innerHTML = new_gamertag.value;
+              title.innerHTML = new_title.value;
+            }
+    
+            function buyBanner() {
+              var link = "https://reversah.com/products/";
+              link = link + selectedAgent;
+              window.open(link);
+            }
+    
+            // get all list items
+            var items = document.querySelectorAll('li');
+            var selectedAgent = "jett";
+            var selectedRank = "none";
+            var selectedDivision = "";
+            var selectedName = "";
+            var selectedTitle = "";
+            var divisionSelection = document.querySelector('#division');
+            divisionSelection.style.display = "none";
+            var update_title = document.querySelector('#change-title-name');
+            update_title.onclick = updateText;
+            var buy_banner = document.querySelector('#buy-banner');
+            buy_banner.onclick = buyBanner;
+            // set the highlight() function as the click handler for each item
+            for (var i = 0; i < items.length; i++) {
+                items[i].onclick = highlight;
+            }
+    // ]]></script>
+    
+    
+
+</body>
+</html>
