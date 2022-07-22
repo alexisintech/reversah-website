@@ -12,87 +12,88 @@
 </head>
 <body>
     
-    <div class="visualizerWrapper">
+  <div class="visualizerWrapper">
 
-        <div id="banner">
-            <img id="banner-img" src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/jett-banner.png?v=1642532672"> <img id="rank-icon" style="width: 60px;" src="https://cdn.shopify.com/s/files/1/0550/1871/7362/%20files/blank-dot.png?v=1641757279">
-            <p id="banner-gamertag"> </p>
-            <p id="banner-title"> </p>
-        </div>
+    <div id="banner">
+        <img id="banner-img" src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/jett-banner.png?v=1642532672"> <img id="rank-icon" style="width: 60px;" src="https://cdn.shopify.com/s/files/1/0550/1871/7362/%20files/blank-dot.png?v=1641757279">
+        <p id="banner-gamertag"> </p>
+        <p id="banner-title"> </p>
+    </div>
+
+    <section class="selector">
+
+        <section class="visualizerHeading">
+            <img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/visualizerHeading.png?v=1658449267">
+        </section>
+
+        <section class="agentrankdivision">
+            <section class="accordionCont">
+                <p class="accordion">Agent</p>
+                <div class="panel">
+                    <ul>
+                        <li id="astra"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Astra_icon_67c0450a-a17e-4b7e-9424-c1595dd3ba4e.png?v=1642020734" alt="Astra"></li>
+                        <li id="brim"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Brimstone_icon_c27384ed-6899-4b8d-b36a-01780f5cb5ce.png?v=1642020734" alt="Brim"></li>
+                        <li id="cypher"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Cypher_icon_f32f5383-95a5-44b5-b6e0-e2a1c66c6162.png?v=1642020734" alt="Cypher"></li>
+                        <li id="jett"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Jett_icon_32ec99f1-551f-481f-bcf4-bef7d5a57e52.png?v=1642020734" alt="Jett"></li>
+                        <li id="killjoy"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Killjoy_icon_d6381f06-777f-4f9f-bc04-dcdd825001cc.png?v=1642020734" alt="Killjoy"></li>
+                        <li id="omen"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Omen_icon_16639c90-35eb-4fd0-9e86-8757b53d3831.png?v=1642020734" alt="Omen"></li>
+                        <li id="phoenix"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Phoenix_icon_0231d78c-b092-4b16-b278-778e78d019d4.png?v=1642020734" alt="Phoenix"></li>
+                        <li id="raze"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Raze_icon_a805c23e-acc3-457d-9df1-ebb1b47e2895.png?v=1642020734" alt="Raze"></li>
+                        <li id="reyna"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Reyna_icon_eef16795-3295-462c-8cbf-cd1ca9f62863.png?v=1642192341" alt="Reyna"></li>
+                        <li id="sage"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Sage_icon_184c6c52-600d-4f82-a257-657672f1e5fe.png?v=1642020734" alt="Sage"></li>
+                        <li id="skye"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Skye_icon_6c4dfe2f-bf95-4714-ab20-cb235a559c68.png?v=1642020734" alt="Skye"></li>
+                        <li id="sova"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Sova_icon_f2ed05b8-00a2-4631-88c1-ea80558e6bc1.png?v=1642020734" alt="Sova"></li>
+                        <li id="viper"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Viper_icon_22a2a3c5-1567-4425-99b4-0319d078c320.png?v=1642020734" alt="Viper"></li>
+                        <li id="yoru"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Yoru_icon_fe96d60e-5029-4730-80be-7fbe6f0c2bab.png?v=1642020734" alt="Yoru"></li>
+                        <li id="neon"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/neon-headshot.png?v=1658452371" alt="Neon"></li>
+                        <li id="chamber"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/chamber-headshot.png?v=1658452371" alt="Chamber"></li>
+                    </ul>
+                </div> <!-- end of .panel -->
+            </section> <!-- end of .accordionCont-->
+            <p class="visualizerLoading"> Loading the agent banner may take a minute... thank you for being patient! </p>
+
+            <section class="accordionCont">
+                <p class="accordion">Rank</p>
+                <div class="panel">
+                    <ul id="ranks">
+                        <li id="none" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/None.png?v=1642192639" alt="No rank"></li>
+                        <li id="iron" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Ir1.png?v=1642027167" alt="Iron"></li>
+                        <li id="bronze" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/B1.png?v=1642027167" alt="Bronze"></li>
+                        <li id="silver" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/S1.png?v=1642027167" alt="Silver"></li>
+                        <li id="gold" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/G1.png?v=1642027167" alt="Gold"></li>
+                        <li id="platinum" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/P1.png?v=1642027168" alt="Platinum"></li>
+                        <li id="diamond" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/D1.png?v=1642027167" alt="Diamond"></li>
+                        <li id="immortal" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Im1.png?v=1642027168" alt="Immortal"></li>
+                        <li id="radiant" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Radiant.png?v=1642027168" alt="Radiant Rank"></li>
+                        <li id="heart" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/H3.png?v=1642027168" alt="Heart Rank"></li>
+                    </ul> <!-- end of #ranks -->
+                </div> <!-- end of .panel -->
+            </section> <!-- end of .accordionCont -->
+
+            <section class="accordionCont">
+                <p class="accordion">Division</p>
+                <div class="panel">
+                    <ul id="division-selector">
+                        <li id="1">1</li>
+                        <li id="2">2</li>
+                        <li id="3">3</li>
+                    </ul>
+                </div> <!-- end of .panel -->
+            </section> <!-- end of .accordionCont -->
+        </section> <!-- .agentrankdivision -->
+
+        <section class="nametitle">
+            <p>Name:</p>
+            <input id="gamertag" style="text-align: center;" size="50" type="text" name="gamertag" class="agent-selector-input" placeholder="Type your gamertag or leave blank">
+            <p>Title:</p>
+            <input id="gametitle" size="50" type="text" name="gametitle" class="agent-selector-input" placeholder="Type your title or leave blank">
+            <button id="change-title-name">Change Text</button>
+            <button id="buy-banner">Buy This Banner!</button>
+        </section> <!-- end of .nametitle -->
+
+    </section> <!-- end of .selector -->
     
-        <section class="selector">
-    
-            <section class="visualizerHeading">
-                <img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/visualizerHeading.png?v=1658449267">
-            </section>
-    
-            <section class="agentrankdivision">
-                <section class="accordionContainer">
-                    <p class="accordion">Agent</p>
-                    <div class="panel">
-                        <ul>
-                            <li id="astra"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Astra_icon_67c0450a-a17e-4b7e-9424-c1595dd3ba4e.png?v=1642020734" alt="Astra"></li>
-                            <li id="brim"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Brimstone_icon_c27384ed-6899-4b8d-b36a-01780f5cb5ce.png?v=1642020734" alt="Brim"></li>
-                            <li id="cypher"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Cypher_icon_f32f5383-95a5-44b5-b6e0-e2a1c66c6162.png?v=1642020734" alt="Cypher"></li>
-                            <li id="jett"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Jett_icon_32ec99f1-551f-481f-bcf4-bef7d5a57e52.png?v=1642020734" alt="Jett"></li>
-                            <li id="killjoy"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Killjoy_icon_d6381f06-777f-4f9f-bc04-dcdd825001cc.png?v=1642020734" alt="Killjoy"></li>
-                            <li id="omen"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Omen_icon_16639c90-35eb-4fd0-9e86-8757b53d3831.png?v=1642020734" alt="Omen"></li>
-                            <li id="phoenix"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Phoenix_icon_0231d78c-b092-4b16-b278-778e78d019d4.png?v=1642020734" alt="Phoenix"></li>
-                            <li id="raze"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Raze_icon_a805c23e-acc3-457d-9df1-ebb1b47e2895.png?v=1642020734" alt="Raze"></li>
-                            <li id="reyna"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Reyna_icon_eef16795-3295-462c-8cbf-cd1ca9f62863.png?v=1642192341" alt="Reyna"></li>
-                            <li id="sage"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Sage_icon_184c6c52-600d-4f82-a257-657672f1e5fe.png?v=1642020734" alt="Sage"></li>
-                            <li id="skye"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Skye_icon_6c4dfe2f-bf95-4714-ab20-cb235a559c68.png?v=1642020734" alt="Skye"></li>
-                            <li id="sova"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Sova_icon_f2ed05b8-00a2-4631-88c1-ea80558e6bc1.png?v=1642020734" alt="Sova"></li>
-                            <li id="viper"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Viper_icon_22a2a3c5-1567-4425-99b4-0319d078c320.png?v=1642020734" alt="Viper"></li>
-                            <li id="yoru"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Yoru_icon_fe96d60e-5029-4730-80be-7fbe6f0c2bab.png?v=1642020734" alt="Yoru"></li>
-                            <li id="neon"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/neon-headshot.png?v=1658452371" alt="Neon"></li>
-                            <li id="chamber"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/chamber-headshot.png?v=1658452371" alt="Chamber"></li>
-                        </ul>
-                    </div> <!-- end of .panel -->
-                </section> <!-- end of .accordionContainer-->
-                <p class="visualizerLoading"> Loading the agent banner may take a minute... thank you for being patient! </p>
-    
-                <section class="accordionContainer">
-                    <p class="accordion">Rank</p>
-                    <div class="panel">
-                        <ul id="ranks">
-                            <li id="none" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/None.png?v=1642192639" alt="No rank"></li>
-                            <li id="iron" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Ir1.png?v=1642027167" alt="Iron"></li>
-                            <li id="bronze" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/B1.png?v=1642027167" alt="Bronze"></li>
-                            <li id="silver" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/S1.png?v=1642027167" alt="Silver"></li>
-                            <li id="gold" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/G1.png?v=1642027167" alt="Gold"></li>
-                            <li id="platinum" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/P1.png?v=1642027168" alt="Platinum"></li>
-                            <li id="diamond" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/D1.png?v=1642027167" alt="Diamond"></li>
-                            <li id="immortal" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Im1.png?v=1642027168" alt="Immortal"></li>
-                            <li id="radiant" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/Radiant.png?v=1642027168" alt="Radiant Rank"></li>
-                            <li id="heart" style="padding: 0px;"><img src="https://cdn.shopify.com/s/files/1/0550/1871/7362/files/H3.png?v=1642027168" alt="Heart Rank"></li>
-                        </ul> <!-- end of #ranks -->
-                    </div> <!-- end of .panel -->
-                </section> <!-- end of .accordionContainer -->
-    
-                <section class="accordionContainer">
-                    <p class="accordion">Division</p>
-                    <div class="panel">
-                        <ul id="division-selector">
-                            <li id="1">1</li>
-                            <li id="2">2</li>
-                            <li id="3">3</li>
-                        </ul>
-                    </div> <!-- end of .panel -->
-                </section> <!-- end of .accordionContainer-->
-            </section> <!-- .agentrankdivision -->
-    
-            <section class="nametitle">
-                <p>Name:</p>
-                <input id="gamertag" style="text-align: center;" size="50" type="text" name="gamertag" class="agent-selector-input" placeholder="Type your gamertag or leave blank">
-                <p>Title:</p>
-                <input id="gametitle" size="50" type="text" name="gametitle" class="agent-selector-input" placeholder="Type your title or leave blank">
-                <button id="change-title-name">Change Text</button>
-                <button id="buy-banner">Buy This Banner!</button>
-            </section> <!-- end of .nametitle -->
-    
-    </section>
-    </div> <!-- end of .visualizerWrapper -->
+  </div> <!-- end of .visualizerWrapper -->
     
     
     <script src="theme.js"></script>
