@@ -12,6 +12,7 @@
 </head>
 <body>
     
+  
   <div class="visualizerWrapper">
 
     <div id="banner">
@@ -221,71 +222,33 @@
                 else if (this.id == "none") {
                   rank.src = ranks[0];
                   selectedRank = "none";
-                  if (divisionSelection.style.display != "none") {
-                    divisionSelection.style.display = "none";
-                    
-                  }
                 } else if (this.id == "iron") {
                   rank.src = ranks[1];
                   selectedRank = "iron";
-                  if (divisionSelection.style.display == "none") {
-                    divisionSelection.style.display = "block";
-                    
-                  }
                 } else if (this.id == "bronze") {
                   rank.src = ranks[4];
                   selectedRank = "bronze";
-                  if (divisionSelection.style.display == "none") {
-                    divisionSelection.style.display = "block";
-                    
-                  }
                 } else if (this.id == "silver") {
                   rank.src = ranks[7];
                   selectedRank = "silver";
-                  if (divisionSelection.style.display== "none") {
-                    divisionSelection.style.display = "block";
-                    
-                  }
                 } else if (this.id == "gold") {
                   rank.src = ranks[10];
                   selectedRank = "gold";
-                  if (divisionSelection.style.display == "none") {
-                    divisionSelection.style.display = "block";
-                    
-                  }
                 } else if (this.id == "platinum") {
                   rank.src = ranks[13];
                   selectedRank = "platinum";
-                  if (divisionSelection.style.display == "none") {
-                    divisionSelection.style.display = "block";
-                    
-                  }
                 } else if (this.id == "diamond") {
                   rank.src = ranks[16];
                   selectedRank = "diamond";
-                  if (divisionSelection.style.display == "none") {
-                    divisionSelection.style.display = "block";
-                  }
                 } else if (this.id == "immortal") {
                   rank.src = ranks[19];
                   selectedRank = "immortal";
-                  if (divisionSelection.style.display == "none") {
-                    divisionSelection.style.display = "block";
-                  }
                 }else if (this.id == "radiant") {
                   rank.src = ranks[22];
                   selectedRank = "none";
-                  if (divisionSelection.style.display != "none") {
-                    divisionSelection.style.display = "none";
-                    
-                  }
                 } else if (this.id == "heart") {
                   rank.src = ranks[23];
                   selectedRank = "none";
-                  if (divisionSelection.style.display != "none") {
-                    divisionSelection.style.display = "none";
-                    
-                  }
                 }
     
                 else if (this.id == "1") {
@@ -372,8 +335,6 @@
             var selectedDivision = "";
             var selectedName = "";
             var selectedTitle = "";
-            var divisionSelection = document.querySelector('#division');
-            divisionSelection.style.display = "none";
             var update_title = document.querySelector('#change-title-name');
             update_title.onclick = updateText;
             var buy_banner = document.querySelector('#buy-banner');
@@ -382,6 +343,7 @@
             for (var i = 0; i < items.length; i++) {
                 items[i].onclick = highlight;
             }
+            console.log(items);
     // ]]></script>
     
     
